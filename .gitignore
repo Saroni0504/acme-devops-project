@@ -1,7 +1,7 @@
 venv/
 __pycache__/
-.terraform/
-terraform.tfstate.backup
-terraform.tfstate
-.terraform.lock.hcl
-main.log
+terraform/.terraform/
+terraform/terraform.tfstate.backup
+terraform/terraform.tfstate
+terraform/.terraform.lock.hcl
+AWS-API/main.log
