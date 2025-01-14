@@ -1,4 +1,4 @@
-resource "aws_elb" "elb_acme" {
+resource "aws_elb" "elb" {
   name               = "elb"
   availability_zones = ["us-east-1a", "us-east-1b"]
   listener {
