@@ -1,5 +1,5 @@
 resource "aws_security_group" "public_sg" {
-  vpc_id = aws_vpc.acme_vpc.id
+  vpc_id = aws_vpc.my_vpc.id
   ingress {
     cidr_blocks = ["0.0.0.0/0"]
     from_port   = 80
@@ -24,7 +24,7 @@ resource "aws_security_group" "public_sg" {
 }
 
 resource "aws_security_group" "private_sg" {
-  vpc_id = aws_vpc.acme_vpc.id
+  vpc_id = aws_vpc.my_vpc.id
   ingress {
     cidr_blocks = ["10.0.0.0/16"]
     from_port   = 0
