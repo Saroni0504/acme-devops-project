@@ -1,11 +1,29 @@
-# ACME Devops Project
+# Devops Project
 
 ## Overview
 
-The assignment is divided into two parts: 
-1. Create AWS objects using Terraform 
-2. List AWS services by region using AWS API (boto3)
+This project is divided into two main parts:
 
+## Part 1: Infrastructure Creation with Terraform
+1. **VPC Setup**
+   - Created a Virtual Private Cloud (VPC) to serve as the foundational network for the infrastructure.
+
+2. **Subnets and Networking**
+   - Configured private and public subnets within the VPC.
+   - Associated each subnet with its respective security groups and route tables.
+
+3. **Elastic Load Balancer (ELB)**
+   - Set up an ELB to distribute incoming requests evenly across all subnets for improved reliability and performance.
+
+4. **Route 53 Configuration**
+   - Configured Route 53 for DNS resolution, enabling access to VPC resources via a domain name instead of direct IP addresses.
+
+## Part 2: AWS Services Listing by Region (using AWS API and boto3)
+- List all relevant AWS resources across each region, including:
+  - **EC2** (Elastic Compute Cloud)
+  - **RDS** (Relational Database Service)
+  - **S3** (Simple Storage Service)
+  - **ELB** (Elastic Load Balancer)
 
 
 ## Setup:
